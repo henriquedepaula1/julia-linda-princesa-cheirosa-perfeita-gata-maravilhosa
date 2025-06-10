@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #fff0f5, #ffe4e1);
+  color: #444;
+  text-align: center;
+  padding-bottom: 3rem;
+  position: relative;
+  overflow-x: hidden;
+}
+
+header {
+  background: #ffb6c1;
+  padding: 2rem 1rem;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: 'Pacifico', cursive;
+  margin-bottom: 0.5rem;
+}
+
+.mensagem {
+  margin: 2rem 1rem;
+  padding: 1.5rem;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #ffc0cb;
+}
+
+.mensagem h2 {
+  margin-bottom: 1rem;
+  color: #c71585;
+  font-family: 'Pacifico', cursive;
+}
+
+#surpresa-btn {
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  background-color: #ff69b4;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#surpresa-btn:hover {
+  background-color: #ff1493;
+}
+
+#surpresa-msg {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #c71585;
+}
+
+.hidden {
+  display: none;
+}
+
+.galeria {
+  margin: 2rem 1rem;
+}
+
+.fotos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.fotos img {
+  width: 45%;
+  max-width: 200px;
+  border-radius: 15px;
+  box-shadow: 0 0 12px #ffb6c1;
+}
+
+.musica {
+  margin: 2rem 1rem;
+}
+
+audio {
+  width: 80%;
+  margin-top: 1rem;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #ffb6c1;
+  color: white;
+  font-weight: bold;
+}
+
+.hearts-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.heart {
+  position: absolute;
+  color: #ff69b4;
+  font-size: 20px;
+  animation: float 6s linear infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) scale(1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-10vh) scale(1.5);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .fotos img {
+    width: 80%;
+  }
+  .letra-musica {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #444;
+  background-color: #fff0f5;
+  padding: 20px;
+  border-radius: 12px;
+  line-height: 1.6;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hidden {
+  display: none;
+}
+.letra-musica {
+  margin-top: 30px;
+  background: linear-gradient(145deg, #ffe0ec, #fff5f9);
+  border: 2px solid #f8bbd0;
+  border-radius: 20px;
+  padding: 25px;
+  color: #880e4f;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.3em;
+  line-height: 1.9;
+  text-align: center;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.4s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.letra-musica.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hidden {
+  display: none;
+}
+.video-fofo {
+  margin: 2rem 1rem;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #ffc0cb;
+}
+
+.video-fofo h2 {
+  margin-bottom: 1rem;
+  font-family: 'Pacifico', cursive;
+  color: #c71585;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+
+}
